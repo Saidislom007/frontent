@@ -1,0 +1,125 @@
+/* Matching Test - Umumiy konteyner */
+.matching-container {
+  
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 600px;
+  margin: 200px auto;
+  text-align: center;
+  color: #000; /* Matn rangi qora */
+}
+
+/* So'zlar va tarjimalar grid ko'rinishda */
+.matching-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/* So'zlar va tarjimalar ustunlari */
+.words,
+.translations {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+/* Kartalar (so'z yoki tarjima) */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 5px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, border 0.3s;
+  color: #000;
+  font-size: 1rem;
+}
+
+/* Hover effekti */
+.card:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+/* Tanlangan karta */
+.card.selected {
+  background-color: #cce5ff;
+  border: 2px solid #007BFF;
+}
+
+/* To‘g‘ri topilgan kartalar */
+.card.matched {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #388e3c;
+  cursor: default;
+}
+
+/* Ball va jon ko'rsatkichi */
+.score {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #000;
+}
+
+/* Tugmalar (umumiy) */
+.button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Level tanlash sahifasi */
+.level-selection {
+  max-height: 400px;
+  width: 600px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.level-selection h2 {
+  margin-bottom: 20px;
+}
+
+.level-selection .button {
+  margin: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.level-selection .button:hover {
+  background-color: #45a049;
+}
+
+/* Responsivlik: mobil qurilmalar uchun */
+@media (max-width: 768px) {
+  .matching-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .words,
+  .translations {
+    width: 100%;
+  }
+
+  .card {
+    font-size: 1.1rem;
+  }
+}

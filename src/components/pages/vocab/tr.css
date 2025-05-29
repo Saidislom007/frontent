@@ -1,0 +1,82 @@
+/* Umumiy konteyner */
+.translator-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Sarlavha */
+  .translator-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Select (Til tanlash) */
+  .select-container {
+    margin-bottom: 10px;
+  }
+  
+  .select-container select {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .select-container span {
+    font-size: 1.5rem;
+    color: #007BFF;
+  }
+  
+  /* Textarea (Matn kiritish) */
+  .translator-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #fff;
+  }
+  
+  /* Tugma (Tarjima qilish) */
+  .translator-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .translator-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Tarjima natijasi */
+  .translated-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    color: #333;
+  }
+  
+  .translated-result strong {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .translated-result p {
+    font-size: 1rem;
+    color: #333;
+  }
+  

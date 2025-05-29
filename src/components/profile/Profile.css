@@ -1,0 +1,194 @@
+/* Umumiy kartaning stili */
+.user-card {
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 100px auto;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Avatar */
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Yengil soya */
+  
+}
+
+/* Foydalanuvchi ismi */
+.user-name {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Divider */
+.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+/* Bo'lim sarlavhasi */
+.section-title {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Skills guruhi */
+.skills-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  max-width: 90px;
+  text-align: center;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  background-color: #e0e0e0;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.skill-level {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Test Results */
+.test-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Ustma-ust joylashsin */
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.test-item {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.test-name {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.test-history-title {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+  color: #555;
+}
+
+.test-history {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.no-history {
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}
+
+.test-item ul {
+  padding-left: 20px;
+  color: #333; /* Yaxshi ko‘rinish uchun */
+}
+
+.test-item li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Button */
+.edit-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Loader */
+.loader {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE dizayn */
+@media (max-width: 600px) {
+  .skills-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .test-item {
+    max-width: 100%;
+  }
+
+  .user-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .user-name {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+}

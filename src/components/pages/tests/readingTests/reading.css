@@ -1,0 +1,310 @@
+body {
+  background: linear-gradient(135deg, #5F9DF7, #3B5998);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Reading sahifasi */
+.reading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Asosiy container */
+.reading-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Sarlavha */
+.reading-title {
+  font-size: 30px;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Matn (Reading Text) */
+.reading-text {
+  font-size: 18px;
+  color: black;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: auto;
+}
+
+/* Testga o‘tish tugmasi */
+.start-test-btn {
+  background: linear-gradient(135deg, #0984e3, #0652dd);
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-test-btn:hover {
+  background: linear-gradient(135deg, #0652dd, #0a3ab4);
+  transform: scale(1.05);
+}
+
+/* Test kartalari */
+.test-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.test-item {
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  color:white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Har bir test uchun alohida gradient fon */
+.test-item:nth-child(1) {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+}
+
+.test-item:nth-child(2) {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+}
+
+.test-item:nth-child(3) {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+}
+
+/* Test kartalari hover effekti */
+.test-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Tugmalar */
+.back-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  max-width: 150px;
+}
+
+.back-button:hover {
+  background: green;
+  transform: scale(1.1);
+}
+
+/* Savollar bo‘limi */
+.question-container {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Savol matni */
+.question-text {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+/* Javob variantlari */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  background: #e0e0e0;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tugma bosilganda effekt */
+.option:active {
+  transform: scale(0.95);
+}
+
+/* Hover effekti */
+.option:hover {
+  background: #bdbdbd;
+}
+
+/* Navigatsiya tugmalari */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background: linear-gradient(135deg, #6c5ce7, #341f97);
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(135deg, #341f97, #2c1461);
+  transform: scale(1.1);
+}
+
+/* Animatsiya */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Test container */
+.test-container {
+  max-width: 100%; 
+  width: 90%; 
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.test-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.question {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #222;
+}
+
+.option-btn:hover {
+  background: #e0e0e0;
+  border-color: #007bff;
+}
+
+.option-btn.selected {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
+  font-weight: bold;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.next-btn:hover {
+  background: #218838;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .test-container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .test-title {
+      font-size: 20px;
+  }
+
+  .question {
+      font-size: 16px;
+  }
+
+  .option-btn {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .next-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+  }
+}

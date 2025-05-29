@@ -1,0 +1,10 @@
+  "dependencies":
+    "@mantine/core": "^7.17.1",
+    "@mantine/form": "^7.17.1",
+    "@mantine/hooks": "^7.17.1",
+    "@tabler/icons-react": "^3.31.0",
+    "axios": "^1.8.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.3.0",
+    "tabler": "^1.0.0"

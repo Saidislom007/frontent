@@ -1,0 +1,70 @@
+/* navBar.css */
+
+.header {
+  position: fixed; /* Joyga qotirib qo'yadi */
+  top: 0;          /* Eng tepada turadi */
+  left: 0;
+  right: 0;
+  z-index: 1000;   /* Boshqa elementlar ustida ko'rinadi */
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+  
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+}
+
+.navbar a.active {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+.profile-button {
+
+  width: 60px;          /* Avatarning o'lchami */
+  height: 60px;         /* Avatar kvadrat bo'lishi kerak */
+  border-radius: 50%;   /* To'liq yumaloq qiladi */
+  overflow: hidden;     /* Tashqariga chiqqan qismlar kesiladi */
+  margin: 0 auto;       /* Markazga olib keladi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Orqa fon (xohlasangiz olib tashlaysiz) */
+}
+
+.profile-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Rasm to'liq ko'rinadi va shaklga moslashadi */
+}
+/* Tugma dizayni */
+
+
+
+
+

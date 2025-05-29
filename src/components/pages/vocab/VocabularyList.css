@@ -1,0 +1,142 @@
+/* VocabularyList.css */
+
+:root {
+  --primary-color: #4CAF50;
+  --primary-hover: #45a049;
+  --light-bg: #ffffff;
+  --dark-text: #1e1e1e;
+  --border-color: #131111;
+  --table-header: antiquewhite;
+  --gray: gray;
+  --error-color: red;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  position: relative;
+  left: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.input,
+.select {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.button:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.03);
+}
+
+.test-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.no-results,
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--gray);
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.vocabulary-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.vocabulary-table th,
+.vocabulary-table td {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  transition: background-color 0.3s ease;
+}
+
+.vocabulary-table th {
+  background-color: var(--table-header);
+  font-weight: bold;
+}
+
+.vocabulary-table tr:hover td {
+  background-color: #f0f0f0;
+}
+
+.th1 {
+  color: black;
+  text-align: center;
+}
+
+/* Responsivlik */
+@media (max-width: 768px) {
+  .controls,
+  .test-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input,
+  .select,
+  .button {
+    width: 100%;
+  }
+}

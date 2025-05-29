@@ -1,0 +1,129 @@
+/* General Body and Container Styling */
+
+.homepage-container {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  padding: 10px 30px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e60b4;
+}
+
+/* Features Section Styling */
+.features-section {
+  padding: 60px 20px;
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+
+}
+
+.feature-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+/* Motivation Section Styling */
+.motivation-section {
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  
+}
+
+.motivation-text {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.btn-secondary {
+  padding: 12px 35px;
+  background-color: greenyellow;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+}
+
+.btn-secondary:hover {
+  background-color: green;
+}

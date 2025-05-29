@@ -1,0 +1,115 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  --button-bg: #1a1a1a;
+  --button-hover: #646cff;
+  --link-color: #646cff;
+  --link-hover: #535bf2;
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Linklar */
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* Body */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: var(--background-color);
+  transition: background-color var(--transition-speed);
+}
+
+/* Asosiy sarlavha */
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  color: var(--text-color);
+  transition: font-size var(--transition-speed), color var(--transition-speed);
+}
+
+/* Tugmalar */
+button {
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  padding: 1em 1.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all var(--transition-speed) ease-in-out;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  border-color: var(--button-hover);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--button-hover);
+  box-shadow: 0 0 10px var(--button-hover);
+}
+
+/* Mobil qurilmalar uchun media query */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  body {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Light rejim (oq fon) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #213547;
+    --background-color: #ffffff;
+    --button-bg: #f9f9f9;
+    --button-hover: #747bff;
+    --link-color: #747bff;
+    --link-hover: #535bf2;
+  }
+}

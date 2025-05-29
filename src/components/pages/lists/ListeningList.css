@@ -1,0 +1,185 @@
+/* Sahifa foni */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Asosiy container */
+.listening-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ortga qaytish tugmasi */
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+}
+
+/* Test kartochkasi */
+.listening-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listening-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Sarlavha */
+.listening-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Kichik sarlavha */
+.listening-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Test variantlari */
+.test-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.test-card {
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+}
+
+.test-card:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Beginner, Intermediate, Advanced tugmalari */
+.level-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    border: none;
+    width: 200px;
+}
+
+/* Beginner */
+.level-button.beginner {
+    background: linear-gradient(135deg, #ff9ff3, #f368e0);
+}
+
+.level-button.beginner:hover {
+    background: linear-gradient(135deg, #f368e0, #ff9ff3);
+    transform: scale(1.1);
+}
+
+/* Intermediate */
+.level-button.intermediate {
+    background: linear-gradient(135deg, #feca57, #ff9f43);
+}
+
+.level-button.intermediate:hover {
+    background: linear-gradient(135deg, #ff9f43, #feca57);
+    transform: scale(1.1);
+}
+
+/* Advanced */
+.level-button.advanced {
+    background: linear-gradient(135deg, #1dd1a1, #10ac84);
+}
+
+.level-button.advanced:hover {
+    background: linear-gradient(135deg, #10ac84, #1dd1a1);
+    transform: scale(1.1);
+}
+
+/* Tugmalarni joylash */
+.level-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Tugmalar */
+.action-button {
+    background: linear-gradient(135deg, #0984e3, #0652dd);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.action-button:hover {
+    background: linear-gradient(135deg, #0652dd, #0a3ab4);
+    transform: scale(1.1);
+}
+
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: green;
+    transform: scale(1.1);
+}

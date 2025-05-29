@@ -1,0 +1,116 @@
+/* Leaderboard container */
+.leaderboard-container {
+  max-width: 45rem; /* 3xl */
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Title section */
+.leaderboard-title {
+  background: linear-gradient(90deg, #3b82f6, #6366f1); /* blue to indigo */
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1.25rem; /* rounded-xl */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.leaderboard-title h2 {
+  font-size: 2rem;
+  font-weight: 800; /* Extrabold */
+  letter-spacing: 0.05em; /* Tracking-wide */
+}
+
+.leaderboard-title p {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+
+/* List styling */
+.leaderboard-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.leaderboard-list li {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px); /* Reduced blur for better readability */
+  border: 1px solid rgba(226, 232, 240, 1);
+  border-radius: 1.25rem; /* rounded-xl */
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* Hover effect */
+.leaderboard-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.leaderboard-item-number {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* Circle */
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.leaderboard-item-name {
+  font-weight: 600; /* Semibold */
+  color: #1f2937; /* Dark gray */
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+.leaderboard-item-name:hover {
+  color: #4c51bf; /* Indigo hover */
+}
+
+.leaderboard-item-points {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4c51bf; /* Indigo text color */
+}
+
+/* Rank colors for top 3 */
+.rank-1 {
+  background-color: #fbbf24; /* yellow */
+}
+
+.rank-2 {
+  background-color: #e5e7eb; /* gray */
+}
+
+.rank-3 {
+  background-color: #fb923c; /* orange */
+}
+
+/* Responsivlik adjustments */
+@media (max-width: 768px) {
+  .leaderboard-container {
+      padding: 1rem;
+  }
+
+  .leaderboard-title h2 {
+      font-size: 1.5rem;
+  }
+
+  .leaderboard-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+  }
+}

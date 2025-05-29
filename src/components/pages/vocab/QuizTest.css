@@ -1,0 +1,102 @@
+/* Quiz Test */
+.quiz-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.options {
+  margin-top: 20px;
+}
+
+.option {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #0056b3;
+}
+
+.score {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Level Selection */
+.level-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.level-selection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.level-selection .button {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+}
+
+.level-selection .button:hover {
+  background-color: #0056b3;
+}
+.quizz{
+  color: chocolate;
+}
+.level-selection {
+  max-height: 400px;
+  width: 600px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.level-selection h2 {
+  margin-bottom: 20px;
+}
+
+.level-selection .button {
+  margin: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.level-selection .button:hover {
+  background-color: #45a049;
+}
