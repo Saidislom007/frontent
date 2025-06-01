@@ -107,7 +107,7 @@ export default function DemoGrammar() {
 
       <ul>
         {questions.map(q => (
-          <li key={q._id}>
+          <li className="lil" key={q._id}>
             <strong>{q.question}</strong><br />
             Variantlar: {q.options.join(', ')}<br />
             To‘g‘ri javob: {q.correct_answer}<br />
